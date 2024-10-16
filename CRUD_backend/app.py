@@ -1,8 +1,7 @@
 from CRUD_backend import app, api, db
+from CRUD_backend.models import *
 from flask_restful import Resource
 from flask import request, make_response
-from models import User
-
 
 class Home(Resource):
     def get(self):
